@@ -47,7 +47,7 @@ const PostCard = ({
                 <span className="px-1 text-[8px]">•</span>
               </>
             )}
-            <span>Enviado por u/{post.author.name}</span>{' '}
+            <span>Enviado por u/{post.author.username}</span>{' '}
             {formatTimeToNow(new Date(post.createdAt))}
           </div>
           <a href={`/r/${subredditName}/post/${post.id}`}>
